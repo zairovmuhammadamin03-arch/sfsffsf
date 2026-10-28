@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FOOTZONE | Futbol minimumi</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="#" class="logo">FOOT<span>ZONE</span><b>.</b></a>
+    <nav>
+      <a href="#home">Bosh sahifa</a>
+      <a href="#news">Yangiliklar</a>
+      <a href="#matches">O‘yinlar</a>
+      <a href="#leagues">Ligalar</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="tag">⚽ FUTBOL OLAMIGA XUSH KELIBSIZ</span>
+        <h1>FUTBOLNING<br>HAQIQIY <span>RUHI.</span></h1>
+        <p>Eng so‘nggi yangiliklar, unutilmas gollar va sevimli jamoalaring haqidagi hamma narsa bir joyda.</p>
+        <a href="#news" class="primary-btn">Yangiliklarni ko‘rish ↗</a>
+      </div>
+      <div class="hero-ball">⚽</div>
+      <div class="hero-bottom">
+        <span>PASSION. PRIDE. FOOTBALL.</span>
+        <span>EST. 2026</span>
+      </div>
+    </section>
+
+    <section class="section" id="matches">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">MAYDONDAGI HAYOT</span>
+          <h2>O‘yinlar <span>markazi</span></h2>
+        </div>
+        <span class="live-label"><i></i> MATCH CENTER</span>
+      </div>
+
+      <div class="match-card">
+        <div class="match-top">
+          <span>La Liga</span>
+          <span>KEYINGI O‘YIN</span>
+        </div>
+        <div class="teams">
+          <div class="team">
+            <div class="team-logo red">M</div>
+            <h3>Barselona</h3>
+          </div>
+          <div class="score">
+            <strong>VS</strong>
+            <span>Uchrashuv</span>
+          </div>
+          <div class="team">
+            <div class="team-logo sky">C</div>
+            <h3>Real</h3>
+          </div>
+        </div>
+        <p class="match-note">Bu namunaviy uchrashuv. Haqiqiy sana va hisoblar kiritilmagan.</p>
+      </div>
+    </section>
+
+    <section class="section" id="news">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">SO‘NGGI XABARLAR</span>
+          <h2>Futbol <span>yangiliklari</span></h2>
+        </div>
+      </div>
+
+      <div class="search-wrap">
+        <input id="searchInput" type="search" placeholder="Yangilik qidirish...">
+        <button id="searchBtn">Qidirish ↗</button>
+      </div>
+
+      <div class="filters">
+        <button class="filter active" data-filter="all">Barchasi</button>
+        <button class="filter" data-filter="europe">Yevropa</button>
+        <button class="filter" data-filter="uzbekistan">O‘zbekiston</button>
+        <button class="filter" data-filter="stars">Yulduzlar</button>
+      </div>
+
+      <div class="news-grid" id="newsGrid">
+        <article class="news-card" data-category="europe">
+          <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=900&q=85" alt="Futbol stadioni">
+          <div class="news-body">
+            <span class="category">YEVROPA FUTBOLI</span>
+            <h3>Yevropa futbolida yangi mavsum hayajoni</h3>
+            <p>Klublar, muxlislar va katta maqsadlar. Yangi futbol mavsumi uchun tayyorgarlik qizg‘in.</p>
+            <a href="#leagues" class="read-more">Batafsil o‘qish ↗</a>
+          </div>
+        </article>
+
+        <article class="news-card" data-category="uzbekistan">
+          <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=900&q=85" alt="Futbol maydoni">
+          <div class="news-body">
+            <span class="category">O‘ZBEKISTON</span>
+            <h3>O‘zbek futbolining yangi avlodi</h3>
+            <p>Yosh futbolchilar, yangi iste’dodlar va milliy futbol kelajagi haqida.</p>
+            <a href="#leagues" class="read-more">Batafsil o‘qish ↗</a>
+          </div>
+        </article>
+
+        <article class="news-card" data-category="stars">
+          <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=900&q=85" alt="Futbol uchrashuvi">
+          <div class="news-body">
+            <span class="category">FUTBOL YULDUZLARI</span>
+            <h3>Futbol yulduzlari va unutilmas lahzalar</h3>
+            <p>Maydondagi mahorat, ajoyib gollar va futbol tarixida qoladigan lahzalar.</p>
+            <a href="#leagues" class="read-more">Batafsil o‘qish ↗</a>
+          </div>
+        </article>
+      </div>
+      <p id="noResults" class="no-results" hidden>Hech narsa topilmadi. Boshqa so‘z bilan qidirib ko‘ring.</p>
+    </section>
+
+    <section class="section leagues" id="leagues">
+      <span class="eyebrow">ENG MASHHUR MUSOBAQALAR</span>
+      <h2>Futbol <span>ligalari</span></h2>
+      <div class="league-grid">
+        <div class="league-item"><span>🏴</span><div><h3>Premier League</h3><p>Angliya</p></div><b>↗</b></div>
+        <div class="league-item"><span>🇪🇸</span><div><h3>La Liga</h3><p>Ispaniya</p></div><b>↗</b></div>
+        <div class="league-item"><span>🇮🇹</span><div><h3>Serie A</h3><p>Italiya</p></div><b>↗</b></div>
+        <div class="league-item"><span>🇩🇪</span><div><h3>Bundesliga</h3><p>Germaniya</p></div><b>↗</b></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a href="#" class="logo">FOOT<span>ZONE</span><b>.</b></a>
+    <p>Futbolga bo‘lgan muhabbat bilan yaratilgan. ⚽</p>
+    <span>© 2026 FOOTZONE. Barcha huquqlar himoyalangan.</span>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
